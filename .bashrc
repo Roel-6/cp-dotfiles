@@ -129,7 +129,7 @@ alias polytrack='(cd ~/MyGames/Poly-Track && ./PolyTrack)'
 alias fnf='(cd ~/MyGames/funkin-linux-64bit && ./Funkin)'
 
 # I3config
-alias i3config='lvim ~/.config/i3/config'
+alias i3config='lvim ~/cp-dotfiles/config/i3/config'
 
 # alias for lvim lol
 export PATH="$HOME/.local/bin/lvim:$PATH"
