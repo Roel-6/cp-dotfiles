@@ -1,0 +1,303 @@
+Dec 23 14:08 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 23 14:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 23 14:10 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 23 14:14 : player: played "Cyberpunk_ Edgerunners _ _I Really Want to Stay At Your House_ by Rosa Walton _ Music Video(MP3_160K).mp3"
+Dec 23 14:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 23 14:14 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 23 14:15 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 23 14:17 : player: played "caramella girls-caramelldansen (sped up_Nightcore)(MP3_160K).mp3"
+Dec 23 14:21 : player: played "Cyberpunk_ Edgerunners _ _I Really Want to Stay At Your House_ by Rosa Walton _ Music Video(MP3_160K).mp3"
+Dec 23 14:24 : player: played "I_m So Lucky Lucky - Nightcore(MP3_160K).mp3"
+Dec 25 10:02 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:02 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:02 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:03 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:04 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:04 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:07 : player: played "I_m So Lucky Lucky - Nightcore(MP3_160K).mp3"
+Dec 25 10:10 : player: played "from seal audio/BJ LIPS- Love potion (Lyrics) [9j5sIO8Su8Y].mp3"
+Dec 25 10:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:11 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:12 : player: played "from seal audio/Attracted to You [9YvkFX3AML4].mp3"
+Dec 25 10:12 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:12 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:13 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 10:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 10:14 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 25 18:20 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+ALSA lib pcm_pulse.c:758:(pulse_prepare) PulseAudio: Unable to create stream: Timeout
+
+Dec 25 18:21 : exception: Failed to open "My ALSA Device" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Dec 25 18:21 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 25 18:23 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 25 18:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 00:06 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 26 02:26 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 02:26 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 02:26 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 02:29 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 26 02:31 : player: played "from seal audio/EsDeeKid & Rico Ace - Cali Man [tZ9kau-ZOE8].mp3"
+Dec 26 02:34 : player: played "from seal audio/The Neighbourhood - A Little Death (Official Audio) [bRfMwoIizTQ].mp3"
+Dec 26 02:38 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #10 - Wanderers[Full] [Best Track] [7ixQn6rhOJU].mp3"
+Dec 26 02:38 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 02:42 : player: played "from seal audio/RATHER LIE (with The Weeknd).mp3"
+Dec 26 02:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 02:44 : player: played "caramella girls-caramelldansen (sped up_Nightcore)(MP3_160K).mp3"
+Dec 26 02:47 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #9 - Amon [E1ReLHEOaNM].mp3"
+Dec 26 02:50 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #3 - Sorrow [-irnALFEQv0].mp3"
+Dec 26 02:53 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #6 - Area [c_bKoBD_vhs].mp3"
+Dec 26 02:53 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 02:57 : player: played "from seal audio/Aaryan Shah - Renegade [Official Video] [vD1bPSjFAQM].mp3"
+Dec 26 03:00 : player: played "from seal audio/The Weeknd - Is There Someone Else？ (Audio) [i4ZuseKFBF0].mp3"
+Dec 26 03:00 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:04 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #23 - On My Own [EX7LHEg5iNA].mp3"
+Dec 26 03:04 : player: played "from seal audio/FAHHH Sound effect from TikTok [q_i8WmC29tQ].mp3"
+Dec 26 03:09 : player: played "from seal audio/Glassy Sky [O4mR83VkMas].mp3"
+Dec 26 03:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:11 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #4 - AJITO [5GP8R4qZdCY].mp3"
+Dec 26 03:15 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #20 - Faded Light [Q2bjozo1uB8].mp3"
+Dec 26 03:16 : player: played "from seal audio/laura les - Haunted {OFFICIAL MUSIC VIDEO} [879ysA4h9r4].mp3"
+Dec 26 03:19 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #2 - Dawn [U8JWiyY6NUU].mp3"
+Dec 26 03:19 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:22 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #19 Dusk [DCmx9q2xRvs].mp3"
+Dec 26 03:22 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:26 : player: played "from seal audio/Let Me Be With You - Round Table feat. Nino [0UBgYLjTERs].mp3"
+Dec 26 03:30 : player: played "from seal audio/Rakuen No Kimi [mEejHML14HQ].mp3"
+Dec 26 03:30 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:30 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:34 : player: played "from seal audio/Sweater Weather [Ao81ziiXHhs].mp3"
+Dec 26 03:34 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:34 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:37 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #5 - Plan A [AOZ1sv6m6bE].mp3"
+Dec 26 03:37 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:37 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:41 : player: played "from seal audio/パズル [Vn2AGYiLrXY].mp3"
+Dec 26 03:41 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 03:41 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 03:44 : player: played "from seal audio/Takopi's Original Sin - Opening FULL『Happy Lucky Chappy』by ano (Lyrics) [H9JjCn5z_zE].mp3"
+Dec 26 03:47 : player: played "from seal audio/BJ LIPS- Love potion (Lyrics) [9j5sIO8Su8Y].mp3"
+Dec 26 03:50 : player: played "from seal audio/When The Moon's Reaching Out Stars -Reload- [GZTp2JzcOJ0].mp3"
+Dec 26 03:53 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #21 - With [YWh-DOgj1oc].mp3"
+Dec 26 03:58 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #1 - Glassy Sky [jSWNtOjQ4pM].mp3"
+Dec 26 04:02 : player: played "from seal audio/Unravel (Acoustic Version) [yyL1h20g8Vs].mp3"
+Dec 26 04:05 : player: played "from seal audio/Disturbia⧸Radioactive Mashup [WJtQzBGVONY].mp3"
+Dec 26 04:07 : player: played "from seal audio/Want To Be Close -Reload- [jKYB5P5g2Uc].mp3"
+Dec 26 04:09 : player: played "from seal audio/X-TALI (SLOWED) [QO4yRGnUyPY].mp3"
+Dec 26 04:10 : player: played "from seal audio/Lil Loaded - Gang Unit (Official Video) [DBhfYWOWR_k].mp3"
+Dec 26 04:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:14 : player: played "from seal audio/Reed Wonder, Aurora Olivas - The Machine (Lyrics) [yGdeRLUiM4Y].mp3"
+Dec 26 04:14 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 04:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:26 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:26 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 04:26 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:26 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 04:26 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 26 04:28 : player: played "from seal audio/Riski Inrahim x Batak Perantau - Adu Nasib (MV) Dir. SPS Daus [daH6dn-Oqjk].mp3"
+Dec 26 04:28 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 04:28 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:31 : player: played "from seal audio/Charli xcx - Talk talk (official lyric video) [pIs46LzZUws].mp3"
+Dec 26 04:32 : player: played "from seal audio/Attracted to You [9YvkFX3AML4].mp3"
+Dec 26 04:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:35 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #17 Gone [INRqngUHDGM].mp3"
+Dec 26 04:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 04:39 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #15 Orphan [dA8O2xdPu2I].mp3"
+Dec 26 04:40 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 06:22 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #14 - Plan B [XfhKqdJ4-xE].mp3"
+Dec 26 09:19 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 09:20 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #14 - Plan B [XfhKqdJ4-xE].mp3"
+Dec 26 09:20 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 09:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:19 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:20 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:24 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 26 11:29 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 26 11:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:32 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:36 : player: played "Cyberpunk_ Edgerunners _ _I Really Want to Stay At Your House_ by Rosa Walton _ Music Video(MP3_160K).mp3"
+Dec 26 11:38 : player: played "from seal audio/laura les - Haunted {OFFICIAL MUSIC VIDEO} [879ysA4h9r4].mp3"
+Dec 26 11:38 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:41 : player: played "from seal audio/RATHER LIE (with The Weeknd).mp3"
+Dec 26 11:41 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:43 : player: played "from seal audio/Want To Be Close -Reload- [jKYB5P5g2Uc].mp3"
+Dec 26 11:45 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #7 - Scapegoat [OsgMUGVeYdk].mp3"
+Dec 26 11:49 : player: played "from seal audio/The Neighbourhood - A Little Death (Official Audio) [bRfMwoIizTQ].mp3"
+Dec 26 11:49 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:49 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:52 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #19 Dusk [DCmx9q2xRvs].mp3"
+Dec 26 11:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 11:52 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 11:53 : player: played "from seal audio/EsDeeKid, Fakemink & Rico Ace - LV Sandals [K6QjQeKfmUs].mp3"
+Dec 26 11:58 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 26 12:02 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #18 - Alone[Raindrops] [Full Version] [5pBUb0_C0r0].mp3"
+Dec 26 12:06 : player: played "from seal audio/Rakuen No Kimi [mEejHML14HQ].mp3"
+Dec 26 12:10 : player: played "from seal audio/When The Moon's Reaching Out Stars -Reload- [GZTp2JzcOJ0].mp3"
+Dec 26 12:10 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 12:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 12:13 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #8 - Aogiri [tTk2bXi8QfY].mp3"
+Dec 26 12:16 : player: played "from seal audio/Reed Wonder, Aurora Olivas - The Machine (Lyrics) [yGdeRLUiM4Y].mp3"
+Dec 26 12:17 : player: played "from seal audio/Attracted to You [9YvkFX3AML4].mp3"
+Dec 26 12:17 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 12:19 : player: played "from seal audio/Odetari - Heavy Love (Official Audio) [xQAuZnie2G0].mp3"
+Dec 26 12:21 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #5 - Plan A [AOZ1sv6m6bE].mp3"
+Dec 26 12:23 : player: played "from seal audio/X-TALI (SLOWED) [QO4yRGnUyPY].mp3"
+Dec 26 12:23 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 12:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 12:27 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #15 Orphan [dA8O2xdPu2I].mp3"
+Dec 26 12:27 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 12:30 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #6 - Area [c_bKoBD_vhs].mp3"
+Dec 26 12:33 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #3 - Sorrow [-irnALFEQv0].mp3"
+Dec 26 12:37 : player: played "from seal audio/Color Your Night [j9Sn1nFGQQ8].mp3"
+Dec 26 12:39 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 12:43 : player: played "from seal audio/österreich ⧸『無能』【Official Music Video】(Tokyo Ghoul OP Theme Song) [JXao5QpsYYg].mp3"
+Dec 26 12:43 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 12:45 : player: played "from seal audio/Charli xcx - Talk talk (official lyric video) [pIs46LzZUws].mp3"
+Dec 26 12:45 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:03 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:03 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:03 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:04 : player: played "from seal audio/Charli xcx - Talk talk (official lyric video) [pIs46LzZUws].mp3"
+Dec 26 13:04 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:04 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:11 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:12 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:12 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:24 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:28 : player: played "from seal audio/katharsis (sainou mix) [6yt6npVWHQI].mp3"
+Dec 26 13:32 : player: played "from seal audio/People In The Box - The Saints⧸Seijatachi [2VpEUya1qBI].mp3"
+Dec 26 13:37 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 26 13:39 : player: played "from seal audio/Want To Be Close -Reload- [jKYB5P5g2Uc].mp3"
+Dec 26 13:42 : player: played "from seal audio/Disturbia⧸Radioactive Mashup [WJtQzBGVONY].mp3"
+Dec 26 13:47 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 13:47 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:51 : player: played "from seal audio/Let Me Be With You - Round Table feat. Nino [0UBgYLjTERs].mp3"
+Dec 26 13:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 13:55 : player: played "from seal audio/Takopi's Original Sin - Opening FULL『Happy Lucky Chappy』by ano (Lyrics) [H9JjCn5z_zE].mp3"
+Dec 26 13:55 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 19:22 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 19:22 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 19:22 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 19:26 : player: played "from seal audio/RATHER LIE (with The Weeknd).mp3"
+Dec 26 19:26 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 26 19:26 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 26 19:30 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 26 19:34 : player: played "from seal audio/österreich ⧸『無能』【Official Music Video】(Tokyo Ghoul OP Theme Song) [JXao5QpsYYg].mp3"
+Dec 27 14:22 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:30 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:30 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 14:31 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 14:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:51 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 14:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:56 : player: played "Cyberpunk_ Edgerunners _ _I Really Want to Stay At Your House_ by Rosa Walton _ Music Video(MP3_160K).mp3"
+Dec 27 14:56 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 14:56 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 14:56 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:00 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"
+Dec 27 15:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:02 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:02 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 15:06 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 27 15:11 : player: played "from seal audio/Rakuen No Kimi [mEejHML14HQ].mp3"
+Dec 27 15:13 : player: played "from seal audio/Tokyo Ghoul Root A OST~ Disk2 #5 - Plan A [AOZ1sv6m6bE].mp3"
+Dec 27 15:17 : player: played "from seal audio/Color Your Night [j9Sn1nFGQQ8].mp3"
+Dec 27 15:17 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 15:17 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:17 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:21 : player: played "from seal audio/Unravel (Acoustic Version) [yyL1h20g8Vs].mp3"
+Dec 27 15:43 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:44 : player: played "from seal audio/BJ LIPS- Love potion (Lyrics) [9j5sIO8Su8Y].mp3"
+Dec 27 15:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:51 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:51 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 15:55 : player: played "from seal audio/RATHER LIE (with The Weeknd).mp3"
+Dec 27 15:55 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 15:56 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:00 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:00 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:00 : player: played "from seal audio/Attracted to You [9YvkFX3AML4].mp3"
+Dec 27 16:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:01 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:01 : player: played "from seal audio/katharsis [oWzVNBemPFE].mp3"
+Dec 27 16:04 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:04 : player: played "from seal audio/Disturbia⧸Radioactive Mashup [WJtQzBGVONY].mp3"
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:07 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:07 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:08 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:08 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : player: played "from seal audio/X-TALI (SLOWED) [QO4yRGnUyPY].mp3"
+Dec 27 16:09 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:11 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:11 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 27 16:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:11 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Dec 27 16:15 : player: played "from seal audio/österreich ⧸『無能』【Official Music Video】(Tokyo Ghoul OP Theme Song) [JXao5QpsYYg].mp3"
+Dec 27 16:16 : player: played "from seal audio/Color Your Night [j9Sn1nFGQQ8].mp3"
