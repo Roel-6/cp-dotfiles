@@ -1,6 +1,7 @@
 set $terminal alacritty
 set $text_editor lvim
 set $file_manager thunar
+set $browser app.zen_browser.zen
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -44,7 +45,7 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec --no-startup-id $terminal
 
 # open the file manager
-bindsym $mod+z exec --no-startup-id $file_manager
+bindsym $mod+t exec --no-startup-id $file_manager
 
 # kill focused window
 bindsym $mod+q kill
@@ -56,11 +57,11 @@ bindsym $mod+q kill
 # bindcode $mod+40 exec --no-startup-id ~/.config/rofi/scripts/launcher_t1 
 
 # Laternative rofi
-bindcode $mod+40 exec --no-startup-id rofi -show drun 
+# bindcode $mod+40 exec --no-startup-id rofi -show drun 
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+bindcode $mod+40 exec --no-startup-id j4-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -208,6 +209,8 @@ bindsym $mod+m exec rofimoji
 bindsym Control+Shift+Escape exec --no-startup-id $terminal -e btop
 bindsym $mod+o exec --no-startup-id obsidian
 bindsym Shift+Print exec --no-startup-id screenrec
+bindsym $mod+z exec flatpak run $browser
+
 
 # RESOLUTION
 exec --no-startup-id xrandr --output LVDS-1 --mode 1024x768

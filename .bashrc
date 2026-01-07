@@ -13,7 +13,7 @@ esac
 HISTCONTROL=ignoreboth
 
 # fastfetch --logo /home/roel/Pictures/ayanamicyan.png --logo-type chafa --logo-width 26 --logo-height 13 --config /usr/share/fastfetch/presets/examples/13
-fastfetch 
+# fastfetch 
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -126,6 +126,7 @@ alias aottg='(cd ~/MyGames/Aottg2Linux && ./launch.sh)'
 alias postal1='flatpak run com.heroicgameslauncher.hgl --no-gui "heroic://launch/1207658754"'
 alias higu1='flatpak run com.heroicgameslauncher.hgl --no-gui "heroic://launch/1532671653"'
 alias wolf='flatpak run com.heroicgameslauncher.hgl --no-gui "heroic://launch/1126166849"'
+alias brawl='flatpak run com.heroicgameslauncher.hgl --no-gui "heroic://launch/c051e0b1433d4308baa920c08ba1a8eb"'
 alias polytrack='(cd ~/MyGames/Poly-Track && ./PolyTrack)'
 alias fnf='(cd ~/MyGames/funkin-linux-64bit && ./Funkin)'
 
