@@ -1401,3 +1401,19 @@ Jan 07 11:19 : alsa_output: Decoder is too slow; playing silence to avoid xrun
 Jan 07 11:24 : player: played "Oasis - Don’t Look Back In Anger [cmpRLQZkTb8].mp3"
 Jan 07 11:29 : player: played "Cyberpunk_ Edgerunners _ _I Really Want to Stay At Your House_ by Rosa Walton _ Music Video(MP3_160K).mp3"
 Jan 07 11:29 : player: played "from seal audio/EsDeeKid, Fakemink & Rico Ace - LV Sandals [K6QjQeKfmUs].mp3"
+Jan 11 00:23 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 11 00:23 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 11 00:23 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Jan 11 00:26 : player: played "from seal audio/パズル [Vn2AGYiLrXY].mp3"
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+Jan 11 13:00 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 11 13:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 11 13:00 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Jan 11 13:00 : player: played "from seal audio/Drake - Not You Too (Audio) ft. Chris Brown [ZX_mvoY_Hg0].mp3"

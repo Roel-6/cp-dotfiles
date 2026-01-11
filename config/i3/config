@@ -1,7 +1,8 @@
-set $terminal alacritty
+set $terminal st
 set $text_editor lvim
 set $file_manager thunar
-set $browser app.zen_browser.zen
+# set $browser app.zen_browser.zen
+set $browser /usr/bin/google-chrome-stable
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -14,7 +15,7 @@ font pango:monospace 8
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom -b
 exec --no-startup-id xbanish
-exec --no-startup-id $terminal
+# exec --no-startup-id $terminal
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -57,11 +58,11 @@ bindsym $mod+q kill
 # bindcode $mod+40 exec --no-startup-id ~/.config/rofi/scripts/launcher_t1 
 
 # Laternative rofi
-# bindcode $mod+40 exec --no-startup-id rofi -show drun 
+bindcode $mod+40 exec --no-startup-id rofi -show drun -drun-use-desktop-cache 
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindcode $mod+40 exec --no-startup-id j4-dmenu-desktop
+# bindcode $mod+40 exec --no-startup-id j4-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -209,11 +210,13 @@ bindsym $mod+m exec rofimoji
 bindsym Control+Shift+Escape exec --no-startup-id $terminal -e btop
 bindsym $mod+o exec --no-startup-id obsidian
 bindsym Shift+Print exec --no-startup-id screenrec
-bindsym $mod+z exec flatpak run $browser
+# bindsym $mod+z exec flatpak run $browser
+bindsym $mod+z exec $browser
 
 
 # RESOLUTION
 exec --no-startup-id xrandr --output LVDS-1 --mode 1024x768
+# exec --no-startup-id xrandr --output LVDS-1 --mode 1366x768
 
 # WALLPAPER
 exec --no-startup-id feh --bg-fill /home/roel/Pictures/wallpaper/cyberpunk/lucy1.jpg
