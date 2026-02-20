@@ -8,6 +8,9 @@ ln -sf ~/.cache/wal/dunst ~/.config/dunst
 ln -sf ~/.cache/wal/picom/shadow.conf ~/.config/picom/shadow.conf
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-3.0/gtk.css
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-4.0/gtk.css
+rm ~/custom-homepage/bento/app.css
+ln -sf ~/.cache/wal/appcolor.css ~/custom-homepage/bento/app.css
+ln -sf `cat ~/.cache/wal/wal` ~/custom-homepage/bento/assets/background.jpg
 pkill dunst; setsid -f dunst
 
 QUTE_BIN="$HOME/qute-py/.venv/bin/python3 -m qutebrowser"
