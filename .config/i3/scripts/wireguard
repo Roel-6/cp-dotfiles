@@ -1,5 +1,4 @@
 #!/bin/bash
-# Check if any WireGuard interface is active
 ACTIVE_VPN=$(wg show interfaces)
 
 if [ -n "$ACTIVE_VPN" ]; then

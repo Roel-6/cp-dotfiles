@@ -26,11 +26,11 @@ sleep 0.5
 notify-send "Wallpaper changed"
 
 # updates lockscreen
-rm /tmp/screenlock.png
+rm ~/.cache/screenlock.png
 
 . "${HOME}/.cache/wal/colors.sh"
 WAL=`cat ~/.cache/wal/wal`
-RESIZE="/tmp/screenlock.png"
+RESIZE="$HOME/.cache/screenlock.png"
 
 if [ ! -f "$RESIZE" ]; then
     convert "$WAL" -resize 1366x768^ -gravity center -extent 1366x768 -fill "$color0" -colorize 50% "$RESIZE"

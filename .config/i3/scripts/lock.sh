@@ -5,7 +5,7 @@
 
 # grabs the wallpaper and resize it
 WAL=`cat ~/.cache/wal/wal`
-RESIZE="/tmp/screenlock.png"
+RESIZE="$HOME/.cache/screenlock.png"
 
 # Get the current hour and username
 HOUR=$(date +%H)
