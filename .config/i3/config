@@ -1,10 +1,7 @@
 set $terminal st
 set $text_editor lvim
-set $file_manager thunar
-# set $browser /home/roel/zen/zen
-# set $browser ~/qute-py/.venv/bin/python3 -m qutebrowser
-# set $browser /usr/bin/google-chrome-stable
-set $browser /usr/bin/thorium-browser
+set $file_manager st -e ranger
+set $browser /usr/lib/firefox/firefox
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -19,16 +16,14 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom -b
 exec --no-startup-id xbanish
 exec --no-startup-id xgamma -rgamma 1 -ggamma 0.9 -bgamma 0.55
-exec --no-startup-id ~/gitstuff/libvibrant/build/cli/vibrant-cli LVDS-1 1.5
-# RESOLUTION
+exec --no-startup-id vibrant-cli LVDS-1 1.3
 exec --no-startup-id xrandr --output LVDS-1 --mode 1366x768
-# Set wallpaper on boot
-# exec --no-startup-id feh --bg-fill /home/roel/Pictures/wallpaper/cyberpunk/lucy1.jpg
-exec_always --no-startup-id wal -R
-# POLYBAR
+# exec --no-startup-id xrdb -merge ~/.Xresources
+exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 40% && $refresh_i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# Plays a sound at startup
-exec --no-startup-id paplay ~/.config/i3/sounds/welcome.ogg
+# exec --no-startup-id paplay ~/.config/i3/sounds/welcome.ogg
+# Updates the environment
+exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY XAUTHORITY
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -37,13 +32,10 @@ exec --no-startup-id paplay ~/.config/i3/sounds/welcome.ogg
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec_always --no-startup-id xss-lock --transfer-sleep-lock -- /home/roel/.config/i3/scripts/lock.sh
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -62,11 +54,6 @@ tiling_drag modifier titlebar
 
 # Laternative rofi
 bindcode $mod+40 exec --no-startup-id rofi -show drun -drun-use-desktop-cache -drun-reload-desktop-cache  
-
-# Fsel launcher
-set $menu st -t launcher -e fsel
-# bindsym $mod+d exec $menu
-for_window [title="^launcher$"] floating enable, resize set width 500 height 430, border none
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
@@ -221,20 +208,22 @@ client.background       $bg
 bindsym $mod+Return exec --no-startup-id $terminal
 bindsym $mod+t exec --no-startup-id $file_manager
 bindsym $mod+q kill
-bindsym Print exec --no-startup-id scrot -d 3 ~/Pictures/Screenshots/screenshot-%Y%m%d-%H%M%S.png && touch ~/Pictures && notify-send -t 2000 "saved screenshot"
+bindsym Print exec --no-startup-id scrot ~/Pictures/Screenshots/screenshot-%Y%m%d-%H%M%S.png && touch ~/Pictures && notify-send -t 2000 "saved screenshot"
+bindsym $mod+Print exec --no-startup-id scrot -d 3 ~/Pictures/Screenshots/screenshot-%Y%m%d-%H%M%S.png && touch ~/Pictures && notify-send -t 2000 "saved screenshot"
 bindsym $mod+b exec --no-startup-id ~/.config/rofi/applets/bin/brightness.sh
 bindsym Control+Shift+Escape exec --no-startup-id $terminal -e btop
-bindsym $mod+o exec --no-startup-id obsidian
+bindsym $mod+o exec obsidian
 bindsym Shift+Print exec --no-startup-id screenrec
 bindsym $mod+z exec $browser
 # TOGGLE PICOM
 bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/picomtoggle.sh
 
 # NO TITLE BAR
-for_window [class="^.*"] border pixel 1.5
+for_window [class="^.*"] border pixel 2
 
 # Wallpaper picker
 bindsym $mod+Shift+w exec --no-startup-id ~/.config/i3/scripts/wallpapermenu
+# bindsym $mod+Shift+w exec --no-startup-id ~/.config/i3/scripts/rofi-wall
 
 # GAPS
 gaps inner 5px

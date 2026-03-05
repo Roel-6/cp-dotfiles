@@ -1,0 +1,5 @@
+[color]
+gradient = 1
+gradient_color_1 = '{color1}'
+gradient_color_2 = '{color5}'
+blend_direction = 'up'

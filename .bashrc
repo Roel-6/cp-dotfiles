@@ -12,8 +12,7 @@ esac
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-# fastfetch --logo /home/roel/Pictures/ayanamicyan.png --logo-type chafa --logo-width 26 --logo-height 13 --config /usr/share/fastfetch/presets/examples/13
-fastfetch 
+fastfetch
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -118,10 +117,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 
 # I3config
-alias i3config='lvim ~/cp-dotfiles/.config/i3/config'
+alias i3config='lvim ~/.config/i3/config'
 
 # alias for qutebrowser
 alias qutebrowser='~/qute-py/.venv/bin/python3 -m qutebrowser'
@@ -141,6 +140,7 @@ export VISUAL="lvim"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export PATH="$HOME/zig-compiler/zig-x86_64-linux-0.15.2:$PATH"
 export PATH="$HOME/rofi/files/scripts:$PATH"
+export LIBVA_DRIVER_NAME=i965
 
 # initializing starship
 eval "$(starship init bash)"

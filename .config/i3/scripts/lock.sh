@@ -38,20 +38,21 @@ i3lock                              \
   --indicator                       \
   --ind-pos="150:680"               \
   --force-clock                     \
-  --time-font=Iosevka               \
+  --time-font=Iosevka Nerd Font     \
   --time-color="$foreground"        \
-  --time-align=1                    \
+  --time-align=0                    \
   --time-size=60                    \
-  --date-font=Iosevka               \
+  --date-font=Iosevka Nerd Font     \
   --date-color="$color5"            \
-  --date-align=1                    \
-  --date-size=30                    \
-  --time-pos="220:688"              \
+  --date-align=0                    \
+  --date-size=23                    \
+  --time-pos="350:688"              \
+  --date-pos="350:720"              \
   --greeter-text="$MSG"             \
   --greeter-font=Iosevka Nerd Font  \
   --greeter-color="$color6"         \
   --greeter-align=1                 \
   --greeter-size=60                 \
-  --greeter-pos="100:150"
+  --greeter-pos="100:100"
 
 

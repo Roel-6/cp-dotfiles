@@ -148,7 +148,7 @@
                                     pane: Pane(Queue)
                                 ),
                                 // (
-                                //     size: "50%",
+                                //     size: "30%",
                                 //     pane: Pane(Cava)
                                 // ),
                             ]
