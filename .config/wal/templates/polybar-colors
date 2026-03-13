@@ -3,5 +3,6 @@ background = #CC{color0.strip}
 foreground = {color7}
 foreground-alt = {color7}
 primary = {color1}
+primary-alt = #CC{color1.strip}
 secondary = {color2}
 alert = {color3}

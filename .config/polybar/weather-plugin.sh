@@ -23,12 +23,12 @@ UNITS="metric"
 
 # Color Settings ______________________________________________________________
 
-COLOR_CLOUD="#606060"
+COLOR_CLOUD="#FFFFFF"
 COLOR_THUNDER="#d3b987"
 COLOR_LIGHT_RAIN="#73cef4"
 COLOR_HEAVY_RAIN="#b3deef"
 COLOR_SNOW="#FFFFFF"
-COLOR_FOG="#606060"
+COLOR_FOG="#FFFFFF"
 COLOR_TORNADO="#d3b987"
 COLOR_SUN="#ffc24b"
 COLOR_MOON="#FFFFFF"
@@ -46,7 +46,7 @@ COLOR_TEXT=""
 WEATHER_FONT_CODE=4
 
 # Font for the thermometer icon
-TEMP_FONT_CODE=2
+TEMP_FONT_CODE=1
 
 # Wind settings _______________________________________________________________
 

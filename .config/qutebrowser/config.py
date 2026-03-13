@@ -213,7 +213,7 @@ c.tabs.max_width = 1
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = 'https://www.google.com/'
+c.url.default_page = 'file:///home/roel/.config/startpage/index.html'
 
 # custom themes css
 # c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
@@ -238,11 +238,11 @@ c.content.user_stylesheets = ["~/.config/qutebrowser/styles/github-materia.css"]
 # the search engine name to the search term, e.g. `:open google
 # qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://www.duckduckgo.com/search?q={}'}
+c.url.searchengines = {'DEFAULT': 'https://www.google.com/search?q={}'}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = 'https://www.duckduckgo.com'
+c.url.start_pages = 'file:///home/roel/.config/startpage/index.html'
 
 # Set the main window background to transparent.  This allows having a
 # transparent tab- or statusbar (might require a compositor such as

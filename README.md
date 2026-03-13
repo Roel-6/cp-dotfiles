@@ -3,11 +3,10 @@
 A really clean and simple looking rice, uses pywal16 as its color generator and picom to handle animations and transparency
 
 ## Screenshots
-![](screenshots/green.png)
-![](screenshots/wallpaperpicker.png)
-![](screenshots/rei.png)
-![](screenshots/kaneki.png)
-![](screenshots/launcher.png)
+![](screenshots/CC.png)
+![](screenshots/pink.png)
+![](screenshots/sunset.png)
+![](screenshots/sky.png)
 
 ## Things i like about it
 * Lightweight and fast

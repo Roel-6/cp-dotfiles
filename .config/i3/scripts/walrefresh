@@ -16,7 +16,8 @@ ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-4.0/gtk.css
 pkill dunst; setsid -f dunst
 pkill -USR1 cava
 
-QUTE_BIN="$HOME/qute-py/.venv/bin/python3 -m qutebrowser"
+# QUTE_BIN="$HOME/qute-py/.venv/bin/python3 -m qutebrowser"
+QUTE_BIN="qutebrowser"
 if pgrep -f "qutebrowser" > /dev/null; then
     $QUTE_BIN ':config-source'
 fi

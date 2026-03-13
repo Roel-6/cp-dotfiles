@@ -5,7 +5,7 @@
 status=$(bluetoothctl show | grep "Powered: yes" | wc -l)
 
 if [ "$status" -eq 0 ]; then
-    echo "%{F#66}󰂲%{F-}" # Greyed out icon if off
+    echo "%󰂲%" # Greyed out icon if off
 else
     # Check if any device is connected
     connected=$(bluetoothctl info | grep "Connected: yes" | wc -l)

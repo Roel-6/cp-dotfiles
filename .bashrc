@@ -122,6 +122,9 @@ fi
 # I3config
 alias i3config='lvim ~/.config/i3/config'
 
+# hyprconfig
+alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+
 # alias for qutebrowser
 alias qutebrowser='~/qute-py/.venv/bin/python3 -m qutebrowser'
 
@@ -141,6 +144,10 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export PATH="$HOME/zig-compiler/zig-x86_64-linux-0.15.2:$PATH"
 export PATH="$HOME/rofi/files/scripts:$PATH"
 export LIBVA_DRIVER_NAME=i965
+export WineDriver=x11
 
 # initializing starship
 eval "$(starship init bash)"
+
+# Created by `pipx` on 2026-03-08 12:04:18
+export PATH="$PATH:/home/roel/.local/bin"
