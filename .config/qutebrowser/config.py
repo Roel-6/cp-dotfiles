@@ -188,7 +188,7 @@ c.qt.args = [
 #   - bottom
 #   - left
 #   - right
-c.tabs.position = 'left'
+c.tabs.position = 'top'
 
 # Width (in pixels or as percentage of the window) of the tab bar if
 # it's vertical.
@@ -208,7 +208,7 @@ c.tabs.min_width = -1
 # not apply properly if max_width is smaller than the minimum size of
 # tab contents, or smaller than tabs.min_width.
 # Type: Int
-c.tabs.max_width = 1
+c.tabs.max_width = -1
 
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.

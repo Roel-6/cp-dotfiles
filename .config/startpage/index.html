@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpage</title>
+    
+    <link rel="stylesheet" href="file:///home/roel/.cache/wal/colors.css">
+    
+    <style>
+        body {
+            /* Using pywal CSS variables with fallbacks */
+            background-color: var(--background, #1e1e2e);
+            color: var(--foreground, #cdd6f4);
+            font-family: 'JetBrainsMono Nerd Font', 'JetBrains Mono', monospace;
+            
+            /* Center everything perfectly */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* The grid layout for categories */
+        .container {
+            display: flex;
+            gap: 60px; /* Space between the columns */
+            flex-wrap: wrap; /* Keeps it responsive if you snap the window to half-screen */
+        }
+
+        /* Category headers */
+        .category h2 {
+            color: var(--color6, #89b4fa); /* Pywal accent color */
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--color4, #89b4fa);
+            text-transform: lowercase; 
+        }
+
+        /* Link lists */
+        .category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category li {
+            margin-bottom: 12px;
+        }
+
+        /* Links */
+        .category a {
+            color: var(--foreground, #cdd6f4);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.25s ease, font-size 0.25s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Space between Nerd Font icon and text */
+        }
+
+        /* Hover Effects */
+        .category a:hover {
+            color: var(--color1, #a6e3a1); /* Another Pywal accent color */
+            font-size: 1.1rem;
+        }
+
+        /* lil slide in animation */
+        @keyframes fadeSlideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* The title/greet message or wtv you wanna call it */
+        .title h1 {
+            color: var(--color3);
+            animation: fadeSlideDown 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title" style="margin-bottom: 30px;">
+      <h1>Welcome Roel!</h1>
+    </div>
+
+    <div class="container">
+        <div class="category">
+            <h2>dev</h2>
+            <ul>
+                <li><a href="https://github.com"><span></span> GitHub</a></li>
+                <li><a href="https://stackoverflow.com"><span></span> StackOverflow</a></li>
+                <li><a href="https://wiki.archlinux.org"><span></span> Arch Wiki</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h2>gaming</h2>
+            <ul>
+                <li><a href="https://retrogametalk.com"><span>󰊗</span> Retro GT</a></li>
+                <li><a href="https://itch.io"><span></span> Itch.io</a></li>
+                <li><a href="https://youtube.com"><span>󰗃</span> YouTube</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>general</h2>
+            <ul>
+                <li><a href="https://reddit.com"><span></span> Reddit</a></li>
+                <!-- <li><a href="https://news.ycombinator.com"><span></span> Hacker News</a></li> -->
+                <li><a href="https://facebook.com"><span></span> Fesnuk</a></li>
+                <li><a href="https://mail.google.com"><span>󰊢</span> Mail</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
