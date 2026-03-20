@@ -12,6 +12,6 @@ else
     if [ "$connected" -gt 0 ]; then
         echo "%{F}Connected%{F-}" 
     else
-        echo "None" # Standard icon if on but not connected
+        echo "N/A" # Standard icon if on but not connected
     fi
 fi
