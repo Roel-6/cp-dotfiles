@@ -2,9 +2,38 @@
 
 # slightly scuffed wallpaper picker menu for use with pywal - uses nsxiv if installed, otherwise uses dmenu
 
+ROTHEME="~/.config/rofi/launchers/type-1/style-10.rasi"
+
+# Some options before starting
+BACKEND=$(printf "wal\ncolorthief\nhaishoku" | rofi -dmenu -theme $ROTHEME -theme-str 'entry { placeholder: "Choose backend :"; }' )
+LIGHTMODE=$(printf "false\ntrue" | rofi -dmenu -theme $ROTHEME -theme-str 'entry { placeholder: "Lightmode"; }' )
+
+# adding a tmp file to pass on to the refresh script
+echo "BCKND=\"$BACKEND\"" > $HOME/.cache/wal/backend.sh
+echo "LIGHTMD=\"$LIGHTMODE\"" > $HOME/.cache/wal/lightmode.sh
+
+# The saturation slider
+# Open a slider from -10 to 10 (representing -1.0 to 1.0)
+val=$(zenity --scale --title="Adjust Value" --text="Select range (-1.0 to 1.0)" \
+      --min-value=-10 --max-value=10 --value=0 --step=1)
+
+# If user cancels, exit
+[ -z "$val" ] && exit 0
+
+# Convert integer to float (e.g., 5 becomes 0.5)
+saturation=$(echo "scale=1; $val / 10" | bc -l)
+
+# Ensure leading zero for decimals (e.g., .5 becomes 0.5)
+if [[ $saturation == .* ]]; then saturation="0$saturation"; fi
+if [[ $saturation == -.* ]]; then saturation="-0${saturation#*-}"; fi
+
 FOLDER=~/Pictures/wallpaper # wallpaper folder
 SCRIPT=~/.config/i3/scripts/walrefresh # script to run after wal for refreshing programs, etc.
 
+# checks if backend have any value at all
+if [ -z "$BACKEND"]; then
+  exit 1
+fi
 
 menu () {
 		if command -v nsxiv >/dev/null; then 
@@ -13,9 +42,17 @@ menu () {
 				CHOICE=$(echo -e "Random\n$(command ls -v $FOLDER)" | dmenu -c -l 15 -i -p "Wallpaper: ")
 		fi
 
+# checks if lightmode is turned on
+if $LIGHTMODE == "true"; then
+  WALCMD="wal -i "$CHOICE" -a 85 -o $SCRIPT -l --backend $BACKEND --saturate $saturation"
+else
+  WALCMD="wal -i "$CHOICE" -a 85 -o $SCRIPT --backend $BACKEND --saturate $saturation"
+fi
+
+# the actual wal command running
 case $CHOICE in
 		Random) wal -i "$FOLDER" -a 85 -o $SCRIPT ;; # dmenu random option
-		*.*) wal -i "$CHOICE" -a 85 -o $SCRIPT ;;
+		*.*) $WALCMD ;;
 		*) exit 0 ;;
 esac
 }

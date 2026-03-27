@@ -4,9 +4,10 @@
     "logo": {
         "type": "auto",
         // "source": "~/.config/fastfetch/logo/ascii/wutwut.txt",
+        "source": "~/asciiarts/chibruh.txt",
         "padding": {"top": 1, "right": 1, "left": 2},
         "color": {
-            "1": "0;35"
+            "1": "1;31"
         },
     },
     "display": {

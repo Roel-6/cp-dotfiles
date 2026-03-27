@@ -32,7 +32,7 @@ config.set('content.proxy', 'system')
 config.set('content.dns_prefetch', True)
 
 # enabling darkmode
-config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.enabled", True, 'https://www.google.com')
 
 # When to show a changelog after qutebrowser was upgraded.
 # Type: String

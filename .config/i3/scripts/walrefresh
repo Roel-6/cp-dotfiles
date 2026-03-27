@@ -7,12 +7,11 @@ rm ~/.config/cava/themes/pywal
 ln -sf ~/.cache/wal/roficolors/pywal.rasi ~/.config/rofi/colors/pywal.rasi
 ln -sf ~/.cache/wal/dunst ~/.config/dunst
 ln -sf ~/.cache/wal/picom/shadow.conf ~/.config/picom/shadow.conf
+ln -sf ~/.cache/wal/picom/wmshadow.conf ~/.config/wmaker/picom/shadow.conf
 ln -sf ~/.cache/wal/pywalcava ~/.config/cava/themes/pywal
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-3.0/gtk.css
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-4.0/gtk.css
-#rm ~/custom-homepage/bento/app.css
-#ln -sf ~/.cache/wal/appcolor.css ~/custom-homepage/bento/app.css
-#ln -sf `cat ~/.cache/wal/wal` ~/custom-homepage/bento/assets/background.jpg
+ln -sf ~/.cache/wal/wal ~/.config/wal.txt
 pkill dunst; setsid -f dunst
 pkill -USR1 cava
 
@@ -25,19 +24,30 @@ fi
 #for server in /tmp/nvimsocket*; do
 #    [ -S "$server" ] && nvim --server "$server" --remote-send '<Esc>:colorscheme wal<CR>' &
 #done
+. "$HOME/.cache/wal/backend.sh"
 
 sleep 0.5
 notify-send "Wallpaper changed"
+notify-send "Backend : $BCKND"
 
 # updates lockscreen
 rm ~/.cache/screenlock.png
 
 . "${HOME}/.cache/wal/colors.sh"
+. "$HOME/.cache/wal/lightmode.sh"
 WAL=`cat ~/.cache/wal/wal`
 RESIZE="$HOME/.cache/screenlock.png"
 
-if [ ! -f "$RESIZE" ]; then
-    magick "$WAL" -resize 1366x768^ -gravity center -extent 1366x768 -fill "$color0" -colorize 50% "$RESIZE"
+if [ "$LIGHTMD" == "true" ]; then
+  BGCOL="$color15"
+else
+  BGCOL="$color0"
 fi
+
+if [ ! -f "$RESIZE" ]; then
+    magick "$WAL" -resize 1366x768^ -gravity center -extent 1366x768 -fill "$BGCOL" -colorize 50% "$RESIZE"
+fi
+
+rm $HOME/.cache/wal/lightmode.sh $HOME/.cache/wal/backend.sh
 # betterlockscreen -u `cat ~/.cache/wal/wal`
 notify-send "lockscreen has been updated"

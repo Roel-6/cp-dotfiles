@@ -1,9 +1,9 @@
-lvim.transparent_window = true
+lvim.transparent_window = false
 vim.opt.number = true
 lvim.colorscheme = "pywal"
 vim.opt.termguicolors = true
-vim.shiftwidth = 4
-vim.opt.softtabstop = 4
+vim.shiftwidth = 8
+vim.opt.softtabstop = 8
 lvim.keys.normal_mode["<leader>pw"] = ":colorscheme pywal<cr>"
 lvim.builtin.lualine.style = "lvim"
 
