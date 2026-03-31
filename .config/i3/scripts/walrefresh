@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+# 1. Reload Xresources and terminals
 xrdb -merge ~/.Xresources
 pidof st | xargs kill -s USR1
-rm -rf ~/.config/dunst
-rm ~/.config/cava/themes/pywal
+
+# 2. Update Symlinks (Redundant rm commands removed)
 ln -sf ~/.cache/wal/roficolors/pywal.rasi ~/.config/rofi/colors/pywal.rasi
 ln -sf ~/.cache/wal/dunst ~/.config/dunst
 ln -sf ~/.cache/wal/picom/shadow.conf ~/.config/picom/shadow.conf
@@ -12,42 +13,38 @@ ln -sf ~/.cache/wal/pywalcava ~/.config/cava/themes/pywal
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-3.0/gtk.css
 ln -sf ~/.cache/wal/gtk.css ~/.config/gtk-4.0/gtk.css
 ln -sf ~/.cache/wal/wal ~/.config/wal.txt
-pkill dunst; setsid -f dunst
+
+# 3. Reload Daemons
+pkill dunst
+setsid -f dunst
 pkill -USR1 cava
 
-# QUTE_BIN="$HOME/qute-py/.venv/bin/python3 -m qutebrowser"
-QUTE_BIN="qutebrowser"
-if pgrep -f "qutebrowser" > /dev/null; then
-    $QUTE_BIN ':config-source'
+# 4. Reload Qutebrowser in the background
+if pgrep -x "qutebrowser" > /dev/null; then
+    qutebrowser ':config-source' &
 fi
 
-#for server in /tmp/nvimsocket*; do
-#    [ -S "$server" ] && nvim --server "$server" --remote-send '<Esc>:colorscheme wal<CR>' &
-#done
+# 5. Load Cache Variables natively
 . "$HOME/.cache/wal/backend.sh"
-
-sleep 0.5
-notify-send "Wallpaper changed"
-notify-send "Backend : $BCKND"
-
-# updates lockscreen
-rm ~/.cache/screenlock.png
-
-. "${HOME}/.cache/wal/colors.sh"
+. "$HOME/.cache/wal/colors.sh"
 . "$HOME/.cache/wal/lightmode.sh"
-WAL=`cat ~/.cache/wal/wal`
+
+# Send initial notification immediately
+notify-send "Wallpaper changed" "Backend: $BCKND"
+
+# 6. Lockscreen Generation (Pushed to background)
 RESIZE="$HOME/.cache/screenlock.png"
 
-if [ "$LIGHTMD" == "true" ]; then
+if [ "$LIGHTMD" = "true" ]; then
   BGCOL="$color15"
 else
   BGCOL="$color0"
 fi
 
-if [ ! -f "$RESIZE" ]; then
-    magick "$WAL" -resize 1366x768^ -gravity center -extent 1366x768 -fill "$BGCOL" -colorize 50% "$RESIZE"
-fi
+# We wrap the heavy ImageMagick task in parentheses with an '&' 
+# to run it silently in the background. The script finishes instantly!
+(
+    magick "$wallpaper" -resize 1366x768^ -gravity center -extent 1366x768 -fill "$BGCOL" -colorize 50% "$RESIZE"
+    notify-send "Lockscreen has been updated"
+) &
 
-rm $HOME/.cache/wal/lightmode.sh $HOME/.cache/wal/backend.sh
-# betterlockscreen -u `cat ~/.cache/wal/wal`
-notify-send "lockscreen has been updated"

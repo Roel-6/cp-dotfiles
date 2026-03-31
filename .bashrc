@@ -150,7 +150,7 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export PATH="$HOME/zig-compiler/zig-x86_64-linux-0.15.2:$PATH"
 export PATH="$HOME/rofi/files/scripts:$PATH"
 export LIBVA_DRIVER_NAME=i965
-export WineDriver=x11
+export WINE_USE_WINED3D=1
 
 # initializing starship
 eval "$(starship init bash)"

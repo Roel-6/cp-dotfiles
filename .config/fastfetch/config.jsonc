@@ -4,7 +4,7 @@
     "logo": {
         "type": "auto",
         // "source": "~/.config/fastfetch/logo/ascii/wutwut.txt",
-        "source": "~/asciiarts/chibruh.txt",
+        // "source": "~/asciiarts/chibruh.txt",
         "padding": {"top": 1, "right": 1, "left": 2},
         "color": {
             "1": "1;31"
@@ -18,7 +18,7 @@
           "break",
          {
             "type": "os",
-            "key": "OS   ",
+            "key": "  OS",
             "keyColor": "31",  // = color1
         },
         {
@@ -34,13 +34,19 @@
         },
         {
             "type": "shell",
-            "key": " └  ",
+            "key": " ├  ",
             "keyColor": "31", 
+        },
+        {
+            "type": "command",
+            "key": " └ age",
+            "keyColor": "31",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days"
         },
         "break",
         {
             "type": "wm",
-            "key": "WM   ",
+            "key": "  WM",
             "keyColor": "magenta", 
         },
         {
@@ -72,7 +78,7 @@
         {
             "type": "cpu",
             "format": "{name}",
-            "key": "CPU",
+            "key": "  CPU",
             "keyColor": "cyan",
         },
         {
@@ -83,7 +89,7 @@
         },
         {
             "type": "memory",
-            "key": " ├  ",
+            "key": " ├ 󰑭 ",
             "keyColor": "cyan",
         },
         {

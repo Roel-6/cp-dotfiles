@@ -1,69 +1,68 @@
 #!/usr/bin/env bash
 
-# slightly scuffed wallpaper picker menu for use with pywal - uses nsxiv if installed, otherwise uses dmenu
+# Paths and Theme
+ROTHEME="$HOME/.config/rofi/launchers/type-1/style-10.rasi"
+FOLDER="$HOME/Pictures/wallpaper"
+SCRIPT="$HOME/.config/i3/scripts/walrefresh"
 
-ROTHEME="~/.config/rofi/launchers/type-1/style-10.rasi"
+menu() {
+    # 1. Choose Backend
+    BACKEND=$(printf "wal\ncolorthief\nhaishoku" | rofi -dmenu -theme "$ROTHEME" -theme-str 'entry { placeholder: "Choose backend:"; }')
+    [ -z "$BACKEND" ] && exit 0
 
-# Some options before starting
-BACKEND=$(printf "wal\ncolorthief\nhaishoku" | rofi -dmenu -theme $ROTHEME -theme-str 'entry { placeholder: "Choose backend :"; }' )
-LIGHTMODE=$(printf "false\ntrue" | rofi -dmenu -theme $ROTHEME -theme-str 'entry { placeholder: "Lightmode"; }' )
+    # 2. Choose Lightmode
+    LIGHTMODE=$(printf "false\ntrue" | rofi -dmenu -theme "$ROTHEME" -theme-str 'entry { placeholder: "Lightmode:"; }')
+    [ -z "$LIGHTMODE" ] && exit 0
 
-# adding a tmp file to pass on to the refresh script
-echo "BCKND=\"$BACKEND\"" > $HOME/.cache/wal/backend.sh
-echo "LIGHTMD=\"$LIGHTMODE\"" > $HOME/.cache/wal/lightmode.sh
+    # 3. Saturation Input (Text-only Rofi prompt)
+    SATURATION=$(rofi -dmenu -theme "$ROTHEME" -theme-str 'entry { placeholder: "Saturation (Default: 0):"; }' -lines 0 < /dev/null)
+    ROFI_EXIT=$? # Capture Rofi's exit code immediately
 
-# The saturation slider
-# Open a slider from -10 to 10 (representing -1.0 to 1.0)
-val=$(zenity --scale --title="Adjust Value" --text="Select range (-1.0 to 1.0)" \
-      --min-value=-10 --max-value=10 --value=0 --step=1)
+    # If you pressed Escape to cancel, Rofi returns exit code 1
+    if [ $ROFI_EXIT -eq 1 ]; then
+        exit 0
+    fi
 
-# If user cancels, exit
-[ -z "$val" ] && exit 0
+    # If you pressed Enter without typing anything, the string is empty
+    if [ -z "$SATURATION" ]; then
+        SATURATION="0"
+    fi
 
-# Convert integer to float (e.g., 5 becomes 0.5)
-saturation=$(echo "scale=1; $val / 10" | bc -l)
+    # Pure Bash Validation: Strictly matches -1.0 to 1.0
+    if [[ ! "$SATURATION" =~ ^[-+]?(0(\.[0-9]+)?|1(\.0+)?)$ ]]; then
+        exit 1 # Invalid input, exit immediately
+    fi
 
-# Ensure leading zero for decimals (e.g., .5 becomes 0.5)
-if [[ $saturation == .* ]]; then saturation="0$saturation"; fi
-if [[ $saturation == -.* ]]; then saturation="-0${saturation#*-}"; fi
+    # 4. Update cache files (ensuring directory exists first)
+    # mkdir -p "$HOME/.cache/wal"
+    echo "BCKND=\"$BACKEND\"" > "$HOME/.cache/wal/backend.sh"
+    echo "LIGHTMD=\"$LIGHTMODE\"" > "$HOME/.cache/wal/lightmode.sh"
 
-FOLDER=~/Pictures/wallpaper # wallpaper folder
-SCRIPT=~/.config/i3/scripts/walrefresh # script to run after wal for refreshing programs, etc.
+    # 5. Launch nsxiv to pick the wallpaper
+    if command -v nsxiv >/dev/null 2>&1; then
+        CHOICE=$(nsxiv -otb "$FOLDER"/*)
+        [ -z "$CHOICE" ] && exit 0
+    else
+        # Exit if nsxiv is missing
+        exit 1
+        notify-send "nsxiv isn't installed"
+    fi
 
-# checks if backend have any value at all
-if [ -z "$BACKEND"]; then
-  exit 1
-fi
+    # 6. Build the pywal command safely using a Bash array
+    wal_args=(-i "$CHOICE" -a 85 -o "$SCRIPT" --backend "$BACKEND" --saturate "$SATURATION")
+    
+    if [ "$LIGHTMODE" = "true" ]; then
+        wal_args+=(-l)
+    fi
 
-menu () {
-		if command -v nsxiv >/dev/null; then 
-				CHOICE=$(nsxiv -otb $FOLDER/*)
-		else 
-				CHOICE=$(echo -e "Random\n$(command ls -v $FOLDER)" | dmenu -c -l 15 -i -p "Wallpaper: ")
-		fi
-
-# checks if lightmode is turned on
-if $LIGHTMODE == "true"; then
-  WALCMD="wal -i "$CHOICE" -a 85 -o $SCRIPT -l --backend $BACKEND --saturate $saturation"
-else
-  WALCMD="wal -i "$CHOICE" -a 85 -o $SCRIPT --backend $BACKEND --saturate $saturation"
-fi
-
-# the actual wal command running
-case $CHOICE in
-		Random) wal -i "$FOLDER" -a 85 -o $SCRIPT ;; # dmenu random option
-		*.*) $WALCMD ;;
-		*) exit 0 ;;
-esac
+    # Execute pywal
+    wal "${wal_args[@]}"
 }
 
-# If given arguments:
-# First argument will be used by pywal as wallpaper/dir path
-# Second will be used as theme (use wal --theme to view built-in themes)
-
+# Handle arguments if passed directly (bypasses the menu)
 case "$#" in
-		0) menu ;;
-		1) wal -i "$1" -o $SCRIPT ;;
-		2) wal -i "$1" --theme $2 -o $SCRIPT ;;
-		*) exit 0 ;;
+    0) menu ;;
+    1) wal -i "$1" -o "$SCRIPT" ;;
+    2) wal -i "$1" --theme "$2" -o "$SCRIPT" ;;
+    *) exit 0 ;;
 esac

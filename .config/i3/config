@@ -20,7 +20,7 @@ exec --no-startup-id vibrant-cli LVDS-1 1.3
 exec --no-startup-id xrandr --output LVDS-1 --mode 1366x768
 # exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id xset r rate 200 35
-exec --no-startup-id wal -i `cat ~/.config/wal.txt` -o ~/.config/i3/scripts/walrefresh
+exec --no-startup-id wal -R
 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 40% && $refresh_i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Updates the environment
