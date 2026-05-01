@@ -14,14 +14,14 @@ exec --no-startup-id dex --autostart --environment i3
 
 # My startups setup
 exec --no-startup-id picom -b
-exec --no-startup-id xbanish
+exec --no-startup-id xbanish -i modifier -m ne
 exec --no-startup-id xgamma -rgamma 1 -ggamma 0.9 -bgamma 0.55
 exec --no-startup-id vibrant-cli LVDS-1 1.3
 exec --no-startup-id xrandr --output LVDS-1 --mode 1366x768
 # exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id xset r rate 200 35
 exec --no-startup-id wal -R
-exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 40% && $refresh_i3status
+exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 20% && $refresh_i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Updates the environment
 exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY XAUTHORITY
@@ -104,6 +104,10 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# scratchpad related
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -220,6 +224,7 @@ bindsym Shift+Print exec --no-startup-id screenrec
 bindsym $mod+z exec $browser
 # TOGGLE PICOM
 bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/picomtoggle.sh
+bindsym $mod+period exec --no-startup-id rofi -modi emoji -show emoji
 
 # NO TITLE BAR
 for_window [class="^.*"] border pixel 2

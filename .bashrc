@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-#. "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
 
 # I3config
 alias i3config='lvim ~/.config/i3/config'
@@ -137,7 +137,7 @@ alias vpnup='sudo openvpn --config $(find ~/ovpncert/proton -name "*.ovpn" | fzf
 # alias vpn='~/.config/i3/scripts/wireguard'
 
 # alias for sharing file with kdeconnect
-alias kshare='~/scripts/kdeshare/kdeshare.sh'
+alias kshare='~/scripts/kdeshare.sh'
 
 # fastfetch alias to run neofetch config
 alias neofetch='fastfetch --config neofetch'
