@@ -137,7 +137,7 @@ alias vpnup='sudo openvpn --config $(find ~/ovpncert/proton -name "*.ovpn" | fzf
 # alias vpn='~/.config/i3/scripts/wireguard'
 
 # alias for sharing file with kdeconnect
-alias kshare='~/scripts/kdeshare.sh'
+alias kshare='~/scripts/kdeshare/kdeshare.sh'
 
 # fastfetch alias to run neofetch config
 alias neofetch='fastfetch --config neofetch'
@@ -154,6 +154,17 @@ export WINE_USE_WINED3D=1
 
 # initializing starship
 eval "$(starship init bash)"
+
+# Ranger shell wrapper
+ranger() {
+    local tempfile=$(mktemp)
+    command ranger --choosedir="$tempfile" "$@"
+    if [ -f "$tempfile" ]; then
+        local newdir=$(cat "$tempfile")
+        rm -f "$tempfile"
+        [ -n "$newdir" ] && [ "$newdir" != "$PWD" ] && cd "$newdir"
+    fi
+}
 
 # Created by `pipx` on 2026-03-08 12:04:18
 export PATH="$PATH:/home/roel/.local/bin"
